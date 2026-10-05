@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 2</title>
+
+<style>
+
+img {
+  display: block;
+  margin: auto;
+  width: 300px;
+}
+
+.header-text{
+background-color: rgb(98, 2, 2);
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 15px;
+margin-top: 30px; 
+margin-bottom: 30px;
+border-radius: 15px; 
+min-height: 45px; 
+max-width: 1000px;
+margin-right: auto; margin-left: auto;
+display: flex; justify-content: space-around; align-items: center;
+}
+
+h1{
+color: beige;
+}
+
+.main{
+background-color: rgb(98, 2, 2);
+padding: 15px;
+margin-top: 30px; 
+margin-bottom: 30px;
+border-radius: 15px; 
+min-height: 10px; 
+max-width: 1000px;
+margin-left: auto; margin-right: auto; 
+}
+
+.film-name{
+text-align: center;
+}
+
+.Genres{
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;    
+}
+
+
+.ratings{
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;    
+}
+
+.film-rating{
+ text-align: center;
+
+}
+
+.submit-review{
+ text-align: center;
+}
+
+.review-text{
+    text-align: center;
+    color: aliceblue;
+}
+
+</style>
+
+</head>
+
+<body style="background-color: rgba(255, 216, 169, 0.762);">
+
+    <!-- HEADER TEXT -->
+
+    <div class="header-text">
+    <h1> RATE A MOVIE </h1>
+    </div>
+
+    <!-- END HEADER TEXT -->
+
+    <!-- HEADER SUB -->
+    
+    <div class="header-sub">
+        <p style="text-align: center;">Share your top pick of a movie</p>
+    </div>
+
+    <!-- END OF HEADER SUB -->
+    
+    <!-- MAIN -->
+
+   <div class="main">
+   
+    <img src="/movie thibgsssssssssss.png" alt="movie slate"  > <br>
+
+    <div class="film-name"> 
+     <input type="Film Name"  placeholder="Movie Title " size="75px">
+    
+    </div>
+    <br>
+    <legend style="color: aliceblue;">Genres (select all that appl): </legend>
+
+
+<div class="Genres" >         
+   <input type="checkbox" name="Genres"  >
+   <label for="Action" style="color: aliceblue;">Action </label><br> 
+    
+    <input type="checkbox" name="Genres">
+   <label for="Comdey" style="color: aliceblue;" >Comdey </label><br> 
+
+    <input type="checkbox" name="Genres">
+   <label for="Drama" style="color: aliceblue;">Drama </label><br> 
+
+   <input type="checkbox" name="Genres">
+   <label for="Fantesy" style="color: aliceblue;">Fantesy </label><br> 
+
+    <input type="checkbox" name="Genres">
+   <label for="Sci-Fi" style="color: aliceblue;">Sci-Fi </label><br> 
+</div>
+<br>
+     <legend style="color: aliceblue;"> Rating </legend>
+           
+     <div class="ratings">
+           <input type="radio" name="Rating" > 
+          
+           <label for="1" >⭐</label> <br>
+    
+           <input type="radio" name="Rating"> 
+         
+           <label for="2">⭐⭐</label> <br>
+
+           <input type="radio" name="Rating"> 
+          
+           <label for="3">⭐⭐⭐</label> <br>
+
+           <input type="radio" name="Rating"> 
+       
+           <label for="4">⭐⭐⭐⭐</label><br>
+
+           <input type="radio" name="Rating"> 
+       
+           <label for="5">⭐⭐⭐⭐⭐</label><br>
+    </div>
+
+    <br>
+
+<div class="film-rating"> 
+     <input type="Film Name" placeholder="Write Your Movie Rating" size="75px">
+</div>
+
+<br>
+<br>
+
+<div class="submit-review"> 
+<input type="submit" value="SUBMIT REVIEW">
+</div>
+
+<br>
+<br>
+<br>
+
+<p class="review-text">Movie Review Tips: Click <a href="https://www.nyfa.edu/student-resources/9-tips-for-writing-a-film-review/">here</a></p>
+</div>
+   
+    <!-- END OF MAIN -->
+
+</body>
+
+</html>

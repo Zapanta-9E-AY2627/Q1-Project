@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1-Project</title>
+
+<style>
+  
+    body{
+background-color: #838cb6;
+    }
+     
+
+    .header{
+        width: auto;
+        height: 200px;
+        background:#2f3261;
+        border-radius: 10px;
+        position: sticky;
+        justify-content: space-between;
+        top: 0;
+        display: flex;
+        padding: 12px 50px;
+        box-sizing: border-box;
+            /* margin-left: auto;     
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: auto;       */
+    }
+
+           .form{
+           align-content: center;
+           text-align: center;
+           width: 900px;
+           height: auto;
+           background: #2f3261;
+           border-radius: 8px;
+           margin-left: 55px;
+           margin-right: 55px;
+           padding-top: 50px;
+           padding-bottom: 70px;
+           margin-bottom: 100px;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+       }
+       .type input{
+           width: 300px;
+           height: auto;
+       }
+       
+       .find{
+           align-content: center;
+       }
+       label{
+           font-size: 20px;
+       }
+       .rating select{
+           width: 200px;
+           height: 30px;
+       }
+       .feedback textarea{
+           width: 400px;
+           height: 100px;
+       }
+       .feedback{
+           margin-bottom: 50px;
+       }
+       .submit-but{
+           width: 200px;
+           height: auto;
+           background-color: #1d1d3b;
+           color: #362267;
+           border: none;
+           padding: 8px;
+           border-radius: 10px;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 40px;
+           margin-top: 50px;
+           cursor: pointer;
+           transition: background-color 0.5s ease;
+       }
+
+
+       .submit-but:hover{
+           background: #241c38;
+           color: #232e63;
+       }
+
+    ul{
+        list-style: none;
+    }
+
+    .menu{
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            /* flex-direction: row; */
+        }
+
+ .works{
+           margin-left: 50px;
+           margin-right: 50px;
+           width: auto;
+           height: auto;
+           background: #2f3261;
+           border-radius: 8px;
+           margin-left: 37px;
+           margin-right: 50px;
+           padding-top: 15px;
+           padding-bottom: 10px;
+           margin-bottom: 50px;
+       }
+      
+
+       .logo{
+           max-width: 150px;
+           max-height: auto;
+           display: flex;
+           align-items: center;
+           object-fit: contain;
+       }
+ li a{
+           display: block;
+           text-decoration: none;
+           color: antiquewhite;
+           font-size: 30px;
+       }
+       li a:hover{
+           color: rgb(0, 0, 0);
+           font-size: 29px;
+       }
+
+h2{
+    text-align: center;
+}
+
+
+
+.profile img{
+           width: 300px;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+       }
+       .profile{
+           width: auto;
+           height: auto;
+           background: #2f3261;
+           border-radius: 8px;
+           margin-left: 50px;
+           margin-right: 50px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+           margin-bottom: 80px;
+       }
+
+ .about{
+           width: auto;
+           height: auto;
+           background: #2f3261;
+           border-radius: 8px;
+           margin-left: 35px;
+           margin-right: 50px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+           padding-left: 40px;
+           padding-right: 40px;
+           margin-bottom: 80px;
+       }
+       .about-text{
+           text-align: center;
+           margin-right: 50px;
+       }
+
+ .basis3{
+           width: auto;
+           height: auto;
+           background: #494e99;
+           border-radius: 8px;
+           margin-left: 300px;
+           margin-right: 300px;
+           padding-top: 15px;
+           padding-bottom: 10px;
+           margin-bottom: 100px;
+ }
+
+    .work2{
+width: auto;
+           height: auto;
+           background: #686ebf;
+           border-radius: 8px;
+           margin-left: 35px;
+           margin-right: 50px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+           padding-left: 40px;
+           padding-right: 40px;
+           margin-bottom: 80px;       }
+
+.ds2{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+
+}
+
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+
+}
+
+p{           text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+
+       }
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+size: 70px;
+}
+
+dd{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+size: 10000px;
+}
+
+dt{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+size: 50px;
+}
+
+</style>
+
+</head>
+<body>
+<!-- HEADER -->
+    <div class="header">
+       <div class="logo">
+           <img class="logo img" src="n (1).png" alt="Logo">
+       </div>
+
+       <div class="menu">
+       <ul>
+            <li><a href="#home"> About Me </a></li>
+            <li><a href="#works"> My Works</a></li>
+            <li><a href="#contacts"> Contact Me</a></li>
+       </ul>
+        
+        </div>
+    </div>
+<!-- END OF HEADER -->
+
+<br>
+<br>
+
+
+<!-- HERO -->
+  <div class="profile">
+       <img src="meeeee.jpg" alt="Profile Picture">
+       <div class="hero-text">
+           <h1>Hello, I am Summer, Zapant</h1>
+           <p>Aspiring web developer/Photographer</p>
+       </div>
+   </div>
+<!-- END OF HER0 -->
+
+<!-- MAIN -->
+
+   <div class="main">
+       <div class="about">
+           <div class="about-text">
+               <h2>ABOUT ME</h2>
+               <p>I am Summer Zapanta a grade 9 student from OB Montessori Greenhills and i part take in multiple activities like sports, watching films, and photography. </p>
+
+
+               <br>
+               <br>
+
+
+               <div class="basis3">
+                   <dl>
+                       <dt><strong>Sportys</strong></dt>
+                       <dd>I enjoy Playing Vollyball, Basketball, and Badminton.</dd>
+
+
+                       <br>
+                       <br>
+
+
+                       <dt><strong>Movies</strong></dt>
+                       <dd>I enjoy watching movies with my freinds specifically the generea Horror.</dd>
+
+
+                       <br>
+                       <br>
+
+
+                       <dt><strong>Photography</strong></dt>
+                       <dd>I enjoy taking photos and videos whenever i go on vacation.</dd>
+                   </dl>
+               </div>
+           </div>
+       </div>
+        
+       <div class="works">
+
+       <h2>My Works</h2>
+    
+
+<!-- ADD SW1, DRILL2 IMAGES  -->
+    
+<div class="work2" >
+                   <p>This website showing my top 3 Artist Wave to earth, Daniel Ceacer, And Malcom Tod.</p>
+                  
+                   <br>
+                   <br>
+
+
+                   <div class="ds2">
+                       <img src="sw 1 quarter 1 zapanta.png" alt="My favorite songs" width="700px">
+                   </div>
+
+
+                   <p>
+                       Click <a href="GH_ICT9Emerald_Q1SW1_Zapanta_Summer.html">here</a> to view the work in full.
+                   </p>
+               </div>
+           <!-- END OF SW 1 -->
+
+
+           <!-- START OF DRILL 2 -->
+               <div class="work2">
+                   <p>This website are so that people can rate movies/films they have watched.</p>
+                  
+                   <br>
+                   <br>
+
+
+                <div class="ds2">
+                           <img src="GH_ICT9Emerald_Q1Drill2_Zapanta_Summer 2.png" alt="Rate a movie" width="700px">
+                   </div>
+
+
+                   <p>
+                       Click <a href="GH_ICT9SEmerald_Q1Drill2_Zapanta_Summer.html">here</a> to view the work in full.
+                   </p>
+
+               </div>
+            <!-- END OF DRILL 2 -->
+           </ol>
+       </div>
+   </div>
+    
+<!-- END OF MAIN -->
+ <div class="form">
+       <form>
+           <h2>CONTACT ME</h2>
+           <!-- NAME -->
+           <div class="type">
+               <h5>Your Name:</h5>
+               <input type="text" name="Your Name" placeholder="Full name">
+
+               <!-- EMAIL -->
+               <h5>Your Email:</h5>
+               <input type="email" name="Your Email" placeholder="dimayacyac.vs@obmontessori.edu.ph">
+           </div>
+
+           <!-- HOW TO FIND ME -->
+           <div class="find">
+               <!-- FACEBOOK -->
+               <h5>How did you find me?</h5>
+               <br>
+               <input type="radio" name="contact">
+               <label for="contact">Facebook</label>
+
+
+               <br>
+               <br>
+
+
+               <input type="radio" name="contact">
+               <label for="contact">Google</label>
+               <br>
+               <br>
+               <!-- FRIENDS -->
+               <input type="radio" name="contact">
+               <label for="contact">Friends</label>
+           </div>
+           <!-- END OF HOW TO FIND ME -->
+          
+           <!-- INTERESTS -->
+           <div class="interests">
+               <!-- WEB -->
+               <h5>Interested In:</h5>
+               <input type="checkbox" name="interest">
+               <label for="interest">Web Design</label>
+
+
+               <br>
+               <br>
+
+
+               <!-- GRAPHIC -->
+               <input type="checkbox" name="interest">
+               <label for="interest">Graphic Design</label>
+
+
+               <br>
+               <br>
+
+
+               <!-- ROBOTICS -->
+               <input type="checkbox" name="interest">
+               <label for="interest">Robotics</label>
+           </div>
+           <!-- END OF INTERESTS -->
+
+            <!-- RATE ME -->
+           <div class="rating">
+                   <h5>Rate My Portfolio</h5>
+                   <select>
+                       <option value="1">Select Rating</option>
+                       <option value="2">Needs Imporvement</option>
+                       <option value="3">Below Average</option>
+                       <option value="4">Average</option>
+                       <option value="5">Above Average</option>
+                       <option value="6">Excellent</option>
+                   </select>
+           </div>
+           <!-- END OF RATE ME -->
+
+           <!-- FEEDBACK -->
+           <div class="feedback">
+               <h5>Any Feedback?</h5>
+               <textarea placeholder="Write your feedback here"></textarea>
+           </div>
+           <!-- END OF FEEDBACK -->
+
+           <!-- BUTTON -->
+           <button type="submit" class="submit-but">
+               Submit
+           </button>
+       </form>
+   </div>
+   <!-- END OF FORM -->
+
+
+   <div class="footer">
+       <footer>©2026 | Vivienne Dimayacyac | Q1 Project | 9-Emerald</footer>
+   </div>
+</body>
+</html>
